@@ -19,8 +19,7 @@ var contador = 0;
 function showImg(){
     const img = images[contador]
     imgElement.src = img.src
-    imgElement.alt = img.name
-        
+    imgElement.alt = img.name   
 }
 
 function updateImg(){
@@ -31,7 +30,6 @@ function updateImg(){
 function previousImg(){
     contador = (contador - 1 + images.length ) % images.length;
     showImg()
-
 }
 
 // Elementos del DOM
